@@ -1,0 +1,15 @@
+{
+  "name": "@rohit-chouhan/bootalert",
+  "version": "1.0.0",
+  "description": "Bootstrap based js alert",
+  "main": "bootalert.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bootstrap",
+    "js"
+  ],
+  "author": "Rohit Chouhan",
+  "license": "MIT"
+}
