@@ -1,112 +1,95 @@
-/*function _bootalert(x){
-    var r=makeid(10);
+function bootalert() {
+    if(arguments.length === 1) {
+        var r=makeid(10);
         $("body").append(
             '<div class="modal fade" id="'+r+'">'+
                 '<div class="modal-dialog">'+
                     '<div class="modal-content">'+
                     '<div class="modal-header">'+
-                        '<h4 class="modal-title">Modal Heading</h4>'+
+                        '<h4 class="modal-title">'+arguments[0]+'</h4>'+
+                        '<button type="button" class="close" data-dismiss="modal">&times;</button>'+
+                    '</div>'+
+                    '</div>'+
+                '</div>'+
+            '</div>'
+        );
+        $('#'+r+'').modal('show');
+    }
+    if(arguments.length === 2) {
+        var r=makeid(10);
+        $("body").append(
+            '<div class="modal fade" id="'+r+'">'+
+                '<div class="modal-dialog">'+
+                    '<div class="modal-content">'+
+                    '<div class="modal-header">'+
+                        '<h4 class="modal-title">'+arguments[0]+'</h4>'+
                         '<button type="button" class="close" data-dismiss="modal">&times;</button>'+
                     '</div>'+
                     '<div class="modal-body">'+
-                        'Modal body..'+
+                    arguments[1] +
+                    '</div>'+
+                    '</div>'+
+                    '</div>'+
+                '</div>'
+        );
+        $('#'+r+'').modal('show');
+    }
+    if(arguments.length === 3) {
+        var r=makeid(10);
+        $("body").append(
+            '<div class="modal fade" id="'+r+'">'+
+                '<div class="modal-dialog">'+
+                    '<div class="modal-content">'+
+                    '<div class="modal-header">'+
+                        '<h4 class="modal-title">'+arguments[0]+'</h4>'+
+                        '<button type="button" class="close" data-dismiss="modal">&times;</button>'+
+                    '</div>'+
+                    '<div class="modal-body">'+
+                    arguments[1]+
                     '</div>'+
                     '<div class="modal-footer">'+
-                        '<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>'+
+                        '<button type="button" class="btn btn-'+arguments[2]+'" data-dismiss="modal">Close</button>'+
                     '</div>'+
-                    '</div>'+
-                '</div>'
-        );
-        $('#'+r+'').modal('show');
-} */
-
-function bootalert(x){
-    var r=makeid(10);
-        $("body").append(
-            '<div class="modal fade" id="'+r+'">'+
-                '<div class="modal-dialog">'+
-                    '<div class="modal-content">'+
-                    '<div class="modal-header">'+
-                        '<h4 class="modal-title">'+x+'</h4>'+
-                        '<button type="button" class="close" data-dismiss="modal">&times;</button>'+
                     '</div>'+
                     '</div>'+
                 '</div>'
         );
         $('#'+r+'').modal('show');
-}
-function bootalert(x,y){
-    var r=makeid(10);
+    }
+    if(arguments.length === 4) {
+        var r=makeid(10);
         $("body").append(
             '<div class="modal fade" id="'+r+'">'+
                 '<div class="modal-dialog">'+
                     '<div class="modal-content">'+
                     '<div class="modal-header">'+
-                        '<h4 class="modal-title">'+x+'</h4>'+
+                        '<h4 class="modal-title">'+arguments[0]+'</h4>'+
                         '<button type="button" class="close" data-dismiss="modal">&times;</button>'+
                     '</div>'+
                     '<div class="modal-body">'+
-                        y +
-                    '</div>'+
-                    '</div>'+
-                '</div>'
-        );
-        $('#'+r+'').modal('show');
-}
-
-function bootalert(x,y,z){
-    var r=makeid(10);
-        $("body").append(
-            '<div class="modal fade" id="'+r+'">'+
-                '<div class="modal-dialog">'+
-                    '<div class="modal-content">'+
-                    '<div class="modal-header">'+
-                        '<h4 class="modal-title">'+x+'</h4>'+
-                        '<button type="button" class="close" data-dismiss="modal">&times;</button>'+
-                    '</div>'+
-                    '<div class="modal-body">'+
-                        y+
+                    arguments[1]+
                     '</div>'+
                     '<div class="modal-footer">'+
-                        '<button type="button" class="btn btn-'+z+'" data-dismiss="modal">Close</button>'+
+                        '<button type="button" class="btn btn-'+arguments[2]+'" data-dismiss="modal">'+arguments[3]+'</button>'+
                     '</div>'+
-                    '</div>'+
-                '</div>'
-        );
-        $('#'+r+'').modal('show');
-}
-
-function bootalert(x,y,z,n){
-    var r=makeid(10);
-        $("body").append(
-            '<div class="modal fade" id="'+r+'">'+
-                '<div class="modal-dialog">'+
-                    '<div class="modal-content">'+
-                    '<div class="modal-header">'+
-                        '<h4 class="modal-title">'+x+'</h4>'+
-                        '<button type="button" class="close" data-dismiss="modal">&times;</button>'+
-                    '</div>'+
-                    '<div class="modal-body">'+
-                        y+
-                    '</div>'+
-                    '<div class="modal-footer">'+
-                        '<button type="button" class="btn btn-'+z+'" data-dismiss="modal">'+n+'</button>'+
                     '</div>'+
                     '</div>'+
                 '</div>'
         );
         $('#'+r+'').modal('show');
+    }
+    // your further logic if needed
 }
 
-
-function bootprompt(x){
-    var r=makeid(10);
+function bootprompt() {
+    if(arguments.length === 1) {
+        var r=makeid(10);
         $("body").append(
             '<div class="modal fade" id="'+r+'">'+
                 '<div class="modal-dialog">'+
                     '<div class="modal-content">'+
                     '<div class="modal-header">'+
-                        '<h4 class="modal-title">'+x+'</h4>'+
+                        '<h4 class="modal-title">'+arguments[0]+'</h4>'+
                         '<button type="button" class="close" data-dismiss="modal">&times;</button>'+
                     '</div>'+
                     '<div class="modal-body">'+
@@ -114,61 +97,61 @@ function bootprompt(x){
                     '</div>'+
                     '<div class="modal-footer">'+
                     '<button type="button" class="btn btn-danger" onclick="bootpass();bootrun();">NEXT</button>'+
-                        '<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>'+
+                    '</div>'+
                     '</div>'+
                     '</div>'+
                 '</div>'
         );
         $('#'+r+'').modal('show');
-}
-
-function bootprompt(x,y){
-    var r=makeid(10);
+    }
+    if(arguments.length === 2) {
+        var r=makeid(10);
         $("body").append(
             '<div class="modal fade" id="'+r+'">'+
                 '<div class="modal-dialog">'+
                     '<div class="modal-content">'+
                     '<div class="modal-header">'+
-                        '<h4 class="modal-title">'+x+'</h4>'+
+                        '<h4 class="modal-title">'+arguments[0]+'</h4>'+
                         '<button type="button" class="close" data-dismiss="modal">&times;</button>'+
                     '</div>'+
                     '<div class="modal-body">'+
                         '<input id="data" class="form-control" type="text"/>'+
                     '</div>'+
                     '<div class="modal-footer">'+
-                    '<button type="button" class="btn btn-danger" onclick="bootpass();bootrun();">NEXT</button>'+
-                        '<button type="button" class="btn btn-'+y+'" data-dismiss="modal">Close</button>'+
+                    '<button type="button" class="btn btn-'+arguments[1]+'" onclick="bootpass();bootrun();">NEXT</button>'+
+                    '</div>'+
                     '</div>'+
                     '</div>'+
                 '</div>'
         );
         $('#'+r+'').modal('show');
-}
-
-function bootprompt(x,y,z){
-    var r=makeid(10);
+    }
+    if(arguments.length === 3) {
+        var r=makeid(10);
         $("body").append(
             '<div class="modal fade" id="'+r+'">'+
                 '<div class="modal-dialog">'+
                     '<div class="modal-content">'+
                     '<div class="modal-header">'+
-                        '<h4 class="modal-title">'+x+'</h4>'+
+                        '<h4 class="modal-title">'+arguments[0]+'</h4>'+
                         '<button type="button" class="close" data-dismiss="modal">&times;</button>'+
                     '</div>'+
                     '<div class="modal-body">'+
                         '<input id="data" class="form-control" type="text"/>'+
                     '</div>'+
                     '<div class="modal-footer">'+
-                    '<button type="button" class="btn btn-'+y+'" onclick="bootpass();bootrun();">'+z+'</button>'+
+                    '<button type="button" class="btn btn-'+arguments[1]+'" onclick="bootpass();bootrun();">'+arguments[2]+'</button>'+
+                    '</div>'+
                     '</div>'+
                     '</div>'+
                 '</div>'
         );
         $('#'+r+'').modal('show');
+    }
 }
 
 function bootpass(){
-    window.bootvar=$("#data").val();
+    window.bootval=$("#data").val();
 }
 
 function makeid(length) {
