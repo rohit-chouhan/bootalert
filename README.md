@@ -8,12 +8,12 @@ A complete pure Bootstrap based alert for Javascript.
 #### CDN
 bootalert.min.js
 ```sh
-https://unpkg.com/@rohit-chouhan/bootalert@1.0.0/bootalert.min.js
+https://unpkg.com/@rohit-chouhan/bootalert/bootalert.min.js
 ```
 
 bootalert.js
 ```sh
-https://unpkg.com/@rohit-chouhan/bootalert@1.0.0/bootalert.js
+https://unpkg.com/@rohit-chouhan/bootalert/bootalert.js
 ```
 `with NPM`
 ```sh
