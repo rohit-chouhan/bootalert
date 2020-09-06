@@ -1,37 +1,50 @@
-## Welcome to GitHub Pages
+## Bootalert
 
-You can use the [editor on GitHub](https://github.com/rohit-chouhan/bootalert/edit/gh-pages/docs/index.md) to maintain and preview the content for your website in Markdown files.
+A complete pure Bootstrap based alert for Javascript. 
+![PHP](https://i.ibb.co/8rLYXkK/bootalert.jpg)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Installation
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+#### CDN
+bootalert.min.js
+```sh
+https://unpkg.com/@rohit-chouhan/bootalert/bootalert.min.js
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+bootalert.js
+```sh
+https://unpkg.com/@rohit-chouhan/bootalert/bootalert.js
+```
+`with NPM`
+```sh
+$ npm install @rohit-chouhan/bootalert
+```
+### Documentation
 
-### Jekyll Themes
+Method | Use
+--------------------------------------|----------------------------------------
+bootalert('Hello World') | Header Text in Alert
+bootalert('Hello World','I am Bootalert') | Header, Message in Alert
+bootalert('Hello World','I am Bootalert','primary') | Header Text, Message, button theme in Alert
+bootalert('Hello World','I am Bootalert','primary','Ok') | Header Text, Message, button theme, Button Name in Alert
+bootprompt('Enter Name','primary','Get Name') |   `Get Input`Header Text, button theme, Button Name in Alert 
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/rohit-chouhan/bootalert/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### Get value from bootprompt
+There is predefine function to exicute your code and get value.
+```javascript
+function bootrun(){
+ console.log(window.bootval);
+}
 
-### Support or Contact
+//complete example
+bootprompt('Enter Email');
+function bootrun(){
+  console.log('Your Email is '+ window.bootval);
+}
+```
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## License
+[MIT](https://choosealicense.com/licenses/mit/) License
+
+## Developers
+This framework is developed by [Rohit Chouhan](https://facebook.com/itsrohitofficailprofile), Rohit Chouhan is the co-founder and CEO of [Codesler](https://g.co/kgs/1jTqhr), a company that's offering digital marketing services and an accomplished web developer.
