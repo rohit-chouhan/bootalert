@@ -15,7 +15,6 @@ bootalert.js
 https://cdn.jsdelivr.net/npm/@rohit-chouhan/bootalert/bootalert.js
 ```
 `with NPM`
-[![NPM](https://nodei.co/npm/@rohit-chouhan/bootalert.png)](https://nodei.co/npm/@rohit-chouhan/bootalert/)
 ```sh
 $ npm install @rohit-chouhan/bootalert
 ```
