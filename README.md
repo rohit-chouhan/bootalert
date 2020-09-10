@@ -1,5 +1,9 @@
 ## Bootalert
-
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)\
+[![Only 32 Kb](https://badge-size.herokuapp.com/rohit-chouhan/bootalert/master/strapdown.min.js)](https://github.com/rohit-chouhan/bootalert/blob/master/strapdown.min.js)
+[![GitHub license](https://img.shields.io/github/license/rohit-chouhan/bootalert.svg)](https://github.com/rohit-chouhan/bootalert/blob/master/LICENSE)
+[![GitHub release](https://img.shields.io/github/release/rohit-chouhan/bootalert.svg)](https://GitHub.com/rohit-chouhan/bootalert/releases/)
+[![GitHub version](https://badge.fury.io/gh/rohit-chouhan%2Fbootalert.svg)](https://github.com/rohit-chouhan/bootalert)
 A complete pure Bootstrap based alert for Javascript. 
 ![PHP](https://i.ibb.co/8rLYXkK/bootalert.jpg)
 
@@ -16,6 +20,7 @@ bootalert.js
 https://cdn.jsdelivr.net/npm/@rohit-chouhan/bootalert/bootalert.js
 ```
 `with NPM`
+[![NPM](https://nodei.co/npm/@rohit-chouhan/bootalert.png)](https://nodei.co/npm/@rohit-chouhan/bootalert/)
 ```sh
 $ npm install @rohit-chouhan/bootalert
 ```
