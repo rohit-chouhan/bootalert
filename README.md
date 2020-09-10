@@ -51,7 +51,7 @@ This framework is developed by [Rohit Chouhan](https://facebook.com/itsrohitoffi
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)\
 [![GithHub](https://img.shields.io/badge/Developed%20By-%40github%2Frohit--chouhan-green)](https://github.com/rohit-chouhan)
 [![Facebook](https://img.shields.io/badge/Facebook-%40itsrohitofficialprofile-blue)](https://facebook.com/itsrohitofficialprofile)
-[![Twitter](https://img.shields.io/badge/Twitter-%40itrealrohit-blue)](https://twitter.com/itsrealrohit)
+[![Twitter](https://img.shields.io/badge/Twitter-%40itsrealrohit-blue)](https://twitter.com/itsrealrohit)
 [![Instagram](https://img.shields.io/badge/Instagram-%40rohitchauhanofficial-orange)](https://instagram.com/rohitchauhanofficial)
 [![Website](https://img.shields.io/badge/Website-rohitchouhan.com-yellow)](https://rohitchouhan.com)
 [![GitHub license](https://img.shields.io/badge/Made%20in-Love%20India-red)](https://github.com/rohit-chouhan)
